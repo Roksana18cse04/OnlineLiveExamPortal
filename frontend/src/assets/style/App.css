@@ -1,0 +1,205 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.university-logo {
+  width: 100px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.ms-3 {
+  margin-left: 16px; /* Adds space between logo and text */
+}
+
+@media (max-width: 768px) {
+  .university-logo {
+    width: 40px; /* Smaller size for mobile screens */
+  }
+
+  .header-container h1 {
+    font-size: 1.25rem; /* Smaller font size for title */
+  }
+}
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Flex container for layout */
+.flex-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* A4 Container Styling */
+.a4-container {
+  flex: 2;
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: white;
+  height: 842px;
+  width: 595px;
+  overflow-y: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Question container */
+.question-container {
+  margin-bottom: 20px;
+}
+
+/* Options container */
+.options-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Custom radio button */
+.custom-radio {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.custom-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.custom-radio label {
+  width: 100%;
+  height: 100%;
+  border: 2px solid orange;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  background-color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-radio input:checked + label {
+  background-color: orange;
+  color: white;
+}
+
+/* Chatbot Container */
+.chatbot-container {
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chatbot-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.chatbot-output {
+  border: 1px solid #ddd;
+  padding: 20px;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+.app-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.left-section,
+.middle-section,
+.right-section {
+  border: 1px solid green;
+  padding: 10px;
+  width: 30%;
+}
+
+.middle-section {
+  overflow-y: auto;
+  height: 90vh;
+}
+
+.left-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-section input,
+.left-section textarea {
+  margin: 5px 0;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.left-section button {
+  background-color: lightgreen;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.question-item {
+  margin-bottom: 15px;
+}
+
+.options label {
+  display: block;
+  margin: 5px 0;
+}
